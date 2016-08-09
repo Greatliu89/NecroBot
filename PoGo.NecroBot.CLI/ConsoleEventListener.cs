@@ -294,9 +294,9 @@ namespace PoGo.NecroBot.CLI
             }
         }
 
-        private static void HandleEvent(EvolveCountEvent evolveCountEvent, ISession session )
+        private static void HandleEvent( EvolveCountEvent evolveCountEvent, ISession session )
         {
-            Logger.Write(session.Translation.GetTranslation(TranslationString.PkmPotentialEvolveCount, evolveCountEvent.Evolves), LogLevel.Evolve);
+            Logger.Write( session.Translation.GetTranslation(TranslationString.PkmPotentialEvolveCount, evolveCountEvent.Evolves), LogLevel.Evolve );
         }
 
         private static void HandleEvent( UpdateEvent updateEvent, ISession session )
